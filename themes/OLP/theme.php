@@ -269,6 +269,7 @@ function nv_site_theme($contents, $full = true)
     $xtpl->assign('SITE_NAME', $global_config['site_name']);
     $xtpl->assign('THEME_SITE_HREF', NV_BASE_SITEURL . 'index.php?' . NV_LANG_VARIABLE . '=' . NV_LANG_DATA);
     $xtpl->assign('LOGO_SRC', NV_BASE_SITEURL . $global_config['site_logo']);
+    $xtpl->assign('BANNER_SRC', NV_BASE_SITEURL . $global_config['site_banner']);
 
     if (empty($global_config['site_banner'])) {
         $xtpl->assign('BANNER_SRC', NV_STATIC_URL . 'themes/' . $global_config['module_theme'] . '/images/header.png');
@@ -347,7 +348,6 @@ function nv_site_theme($contents, $full = true)
                 $xtpl->assign('STHEME_TITLE', $lang_global['theme_type_' . $theme_type]);
                 $xtpl->assign('STHEME_INFO', sprintf($lang_global['theme_type_chose'], $lang_global['theme_type_' . $theme_type]));
                 $xtpl->assign('STHEME_ICON', $icons[$theme_type]);
-
                 if ($theme_type == $current_theme_type) {
                     $xtpl->parse('main.theme_type.loop.current');
                 } else {

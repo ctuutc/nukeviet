@@ -8,3 +8,14 @@
  */
 
 /* Các tùy chỉnh CSS của giao diện nên để vào đây */
+
+.olp-block-34 {
+    background-color: black;
+    color: white;
+    position: fixed;
+    height: 100%;
+    z-index: 1000;
+}
+.olp-block-125 {
+    left:16.66666667%;
+}
