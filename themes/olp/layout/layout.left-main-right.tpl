@@ -8,6 +8,7 @@
     </div>
     <div class="col-md-21">
         [TOP]
+        {MODULE_CONTENT}
         [FOOTER]
     </div>
 </div>
