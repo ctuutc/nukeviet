@@ -275,7 +275,8 @@ if (isset($module_config['themes'][$selectthemes])) {
             [
                 'key' => $key,
                 'value' => $value,
-                'selected' => (isset($config_theme['block']['border_style']) and $config_theme['block']['border_style'] == $key) ? ' selected="selected"' : '']
+                'selected' => (isset($config_theme['block']['border_style']) and $config_theme['block']['border_style'] == $key) ? ' selected="selected"' : ''
+            ]
         );
         $xtpl->parse('main.block_border_style');
     }
